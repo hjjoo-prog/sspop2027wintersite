@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>
+   STAR+ING | EVENTS
+  </title>
+<link href="style.css" rel="stylesheet"/>
+<style>body{min-height:100vh} .crumb{padding-top:14px!important} html{scrollbar-gutter:stable}</style></head>
+<body>
+
+<main>
+<div class="wrap crumb">
+<a href="home.html">
+     HOME
+    </a>
+    / EVENTS
+   </div>
+<section id="events">
+<div class="wrap">
+<div class="eyebrow">
+      03 / EXPERIENCE
+     </div>
+<h2>
+      현장 이벤트
+     </h2>
+<p class="lead">
+      공간에서 이어지는 팬 참여 프로그램 (시연용 기획안).
+     </p>
+<div class="event-stack" style="display:flex;flex-direction:column;gap:22px">
+<div class="feature">
+<h3>
+        01 카드 갤러리
+       </h3>
+<p>
+        아티스트별 카드 아카이브 전시 및 포토존.
+       </p>
+</div>
+<div class="feature">
+<h3>
+        02 플레이존 &amp; 스탬프 미션
+       </h3>
+<p>
+        게임 플레이 체험과 미션에 참여해 보세요. 체험 참여로 도장을 모으고 경품에 도전할 수 있습니다.
+       </p>
+</div>
+<div class="banner">
+<h3>
+        03 POP-UP EXCLUSIVE CARDS
+       </h3>
+<p>
+        상품 A: 확정 카드 / 상품 B: 랜덤 카드 — 실제 구성·가격·구매 제한은 추후 확정
+       </p>
+<button class="btn" onclick="toast('데모입니다. 실제 구매 페이지는 연결되지 않습니다.')">
+        WEB 카드 구매하기 ↗
+       </button>
+</div>
+<div class="feature">
+<h3>
+        04 직원 카드 교환
+       </h3>
+<p>
+        현장 직원과 보유 카드를 교환하는 참여 프로그램.
+       </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer>
+   STAR+ING POP-UP EXPERIENCE · INTERACTIVE CONCEPT DEMO
+   <br/>
+   본 페이지는 공식 서비스가 아닌 기능 시연용 목업입니다.
+  </footer>
+<div class="toast" id="toast">
+</div>
+<div class="modal" id="modal">
+<div class="modal-box">
+<div id="modalContent">
+</div>
+<button class="btn secondary" onclick="document.getElementById('modal').classList.remove('open')" style="width:100%;margin-top:15px">
+     닫기
+    </button>
+</div>
+</div>
+<script src="common.js">
+</script>
+<script>try{parent.postMessage({type:'staring-page',page:location.pathname.split('/').pop()},'*')}catch(e){}</script></body>
+</html>
